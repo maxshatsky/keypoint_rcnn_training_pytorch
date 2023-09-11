@@ -58,9 +58,9 @@ class CocoEvaluator:
             coco_eval.summarize()
             print("==================================")
             print("actually, precision is:")
-            print(coco_eval.eval['precision'])
+            print(coco_eval.eval['precision'].shape)
             print("actually, recall is:")
-            print(coco_eval.eval['recall'])
+            print(coco_eval.eval['recall'].shape)
             print("==================================")
 
     def prepare(self, predictions, iou_type):
